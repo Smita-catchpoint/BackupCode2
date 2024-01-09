@@ -21,7 +21,7 @@ namespace DemoAsync
         {
             Console.WriteLine("Method2 Started......");
 
-            //Method2
+            //Method1();
             await Method1();
 
             Console.WriteLine("\nMethod2 End");

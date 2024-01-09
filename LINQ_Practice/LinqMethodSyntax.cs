@@ -40,6 +40,7 @@ namespace LINQ_Practice
 
             var num2 = numbers.All(num => num < 20);
             Console.WriteLine($"\nAll Numbers Less Than 20: {num2}");
+            
 
             var count = numbers.Count();
             Console.WriteLine($"\nCount: {count}");

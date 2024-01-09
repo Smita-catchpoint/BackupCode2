@@ -10,7 +10,7 @@ namespace LINQ_Practice
     {
         static void Main()
         {
-            int[] numbers = Enumerable.Range(1, 100).ToArray();
+            int[] numbers = Enumerable.Range(1, 10).ToArray();
 
             numbers.AsParallel().ForAll(num => Console.WriteLine($"Number: {num}"));
 
@@ -32,18 +32,18 @@ namespace LINQ_Practice
             var sum = numbers.AsParallel().Aggregate((sum, num) => sum + num);
             Console.WriteLine($"\nSum: {sum}");
 
-            Parallel.For(0, 10, i => Console.WriteLine($"Iteration {i}"));
+           // Parallel.For(0, 10, i => Console.WriteLine($"Iteration {i}"));
 
           
-            bool anyGreaterThan50 = numbers.AsParallel().Any(num => num > 50);
-             Console.WriteLine($"Any Number > 50: {anyGreaterThan50}");
+            bool anyGreaterThan50 = numbers.AsParallel().Any(num => num > 5);
+             Console.WriteLine($"Any Number > 5: {anyGreaterThan50}");
 
            
-            bool allLessThan100 = numbers.AsParallel().All(num => num < 100);
-            Console.WriteLine($"All Numbers < 100: {allLessThan100}");
+            bool allLessThan100 = numbers.AsParallel().All(num => num < 10);
+            Console.WriteLine($"All Numbers < 10: {allLessThan100}");
 
-            int countGreaterThan75 = numbers.AsParallel().Count(num => num > 75);
-            Console.WriteLine($"Count > 75: {countGreaterThan75}");
+            int countGreaterThan75 = numbers.AsParallel().Count(num => num > 7);
+            Console.WriteLine($"Count > 7: {countGreaterThan75}");
 
            
             int minNumber = numbers.AsParallel().Min();

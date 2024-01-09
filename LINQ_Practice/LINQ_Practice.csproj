@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LINQ_Practice.FileName</StartupObject>
+    <StartupObject>LINQ_Practice.ParallelLinqDemo3</StartupObject>
   </PropertyGroup>
 
 </Project>

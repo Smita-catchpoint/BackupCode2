@@ -20,8 +20,8 @@ namespace ConsoleApp2
             );
 
             Console.WriteLine($"Method1 Result: {Result1}");
-            Console.WriteLine($"Method2 Result: {Result2}");
-            Console.WriteLine($"Parallel Execution Completed");
+            Console.WriteLine($"\nMethod2 Result: {Result2}");
+            Console.WriteLine($"\nParallel Execution Completed");
 
             Console.ReadKey();
         }

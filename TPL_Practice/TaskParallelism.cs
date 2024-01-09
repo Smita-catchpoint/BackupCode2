@@ -10,7 +10,10 @@ namespace TPL_Practice
     {
         static void Main()
         {
-            Parallel.Invoke(() => PrintMessage("Task 1"), () => PrintMessage("Task 2"));
+            Parallel.Invoke(
+                () => PrintMessage("Task 1"), 
+                () => PrintMessage("Task 2")
+                );
             Console.ReadLine();
         }
 

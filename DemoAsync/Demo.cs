@@ -13,9 +13,9 @@ namespace DemoAsync
         {
             Console.WriteLine("Main Method Started");
 
-            Method1();
+           Method1();
 
-            // Method2();
+          // Method2();
 
             Console.WriteLine("Main Method End");
             Console.ReadKey();
@@ -23,7 +23,7 @@ namespace DemoAsync
         async static void Method1()
         {
             Console.WriteLine("Method1 Started......");
-            // await Task.Delay(1000);
+             //await Task.Delay(1000);
             await Task.Delay(TimeSpan.FromSeconds(10));
             Console.WriteLine("\nMethod1 End");
         }

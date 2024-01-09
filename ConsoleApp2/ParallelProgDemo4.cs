@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ConsoleApp2
 {
     internal class ParallelProgDemo4
-    {
+    {       //parallel foreach takes less time.
         static void Main()
         {
             Stopwatch stopwatch = new Stopwatch();
@@ -20,14 +20,14 @@ namespace ConsoleApp2
             //foreach (int i in integerList)
             //{
             //    long total = IndependentTask();
-            //    Console.WriteLine("{0} - {1}", i, total);
+            //     Console.WriteLine($" i: {i} total: {total} Thread:{Thread.CurrentThread.ManagedThreadId}");
             //};
 
-            var options = new ParallelOptions() { MaxDegreeOfParallelism = 2 };
+            // var options = new ParallelOptions() { MaxDegreeOfParallelism = 2 };
             Parallel.ForEach(integerList, i =>
                 {
                     long total = IndependentTask();
-                    Console.WriteLine("{0} - {1}", i, total);
+                    Console.WriteLine($" i: {i} total: {total} Thread:{Thread.CurrentThread.ManagedThreadId}");
                 });
 
 

@@ -16,8 +16,7 @@ namespace LINQ_Practice
                 1, 2, 6, 7, 5, 4, 10, 12, 13, 20, 18, 9, 11, 15, 14, 3, 8, 16, 17, 19
             };
 
-
-            var num1 = numbers
+                 var num1 = numbers
                 .AsParallel() 
                 .AsOrdered() 
                 .Where(x => x % 2 == 0)

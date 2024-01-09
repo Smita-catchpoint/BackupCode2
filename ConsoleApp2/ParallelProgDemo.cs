@@ -15,12 +15,12 @@ namespace ConsoleApp2
 
             stopWatch.Start();
 
-            //Calling sequentially
+            //Calling sequentially >//Single threded >627ms
             //Method1();
             //Method2();
             //Method3();
 
-            //Calling Parallely
+            //Calling Parallely //multithreaded>247ms>but with Thread.Sleep()
             Parallel.Invoke(Method1, Method2, Method3);
 
             stopWatch.Stop();
